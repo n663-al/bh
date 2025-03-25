@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+body{
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    background-position: center;
+    
+}
+
+span{
+    color: pink;
+    text-shadow: pink;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+header{
+    background-color: aqua;
+}
+
+span{
+    font-size: xxx-large;
+    font-weight: bold;
+    text-shadow: 4px 4px 20px pink;
+
+}
+
+.b{
+text-align: center;
+}
+
+.logo{
+    height: 30px;
+    border-radius: 40px;
+    border: 2px pink;
+    margin: 7px;
+    box-shadow: 4px 4px 20px white;
+}
+
+.logo:hover{
+    box-shadow: 4px 4px 20px aquamarine;
+}
+
+.hi{
+    color: cyan;
+    text-shadow: 4px 4px 20px cyan;
+}
+
+.say{
+    text-shadow: 4px 4px 20px white;
+}
+
+.pepe{
+    text-align: center;
+}
+
+.nama{
+    font-size: x-large;
+}
+
+
+.ini .opo{
+    display: flex;
+    list-style: none;
+    margin-left:900px;
+}
+
+.ini .opo .unu{
+        margin: 20px;
+        font-weight: bold;
+        
+}
+
+.ini .opo .unu:hover{
+    text-decoration: underline;
+    box-shadow:  0px 0px 400px 86px #a481ff ;
+    animation: 1s;
+}
+
+
+
+.perknalan {
+    display: flex;
+}
+
+.gambar{
+    height: 200px;
+    border-radius: 200px;
+    box-shadow: 5px 5px 30px ;
+}
+
+section{
+    margin: 40px;
+    padding: 200px;
+}
+
+.poro{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.poro .ulu{
+    color: black;
+    list-style: none;
+    display: flex;
+}
+
+.poro .ulu .lili{
+    margin: 20px;
+    font-weight: bold;
+  
+}
+
+.l0gin{
+    border: 2px solid pink;
+    background: transparent;
+    backdrop-filter: blur(11px);
+    padding: 2x;
+    padding: 80px;
+    border-radius: 10px;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group{
+   margin: 20px;
+ 
+}
+
+.input-group input{
+   background: transparent;
+   padding: 15px;
+    width: 220px;
+    height: 10px;
+    border-radius: 20px;
+    border:2px solid pink ;
+    counter-reset: pink;
+}
+
+label{
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+}
+
+button{
+    background-color:palegoldenrod;
+     margin-left:48px ;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+}
+ .baru{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.a{
+    color: white;
+    text-decoration: none;
+}
+    
+
+.baru a{
+    color: black;
+    text-decoration: none;
+    background-color: #e4edc0
+}
+
+
+.oas{
+   margin-left: 330px;
+}
+
+.k{
+    text-align: center;
+    font-size: x-large;
+}
+
+h2{
+    text-align: center;
+}

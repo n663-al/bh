@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lembur</title>
+    <link rel="stylesheet" href="bian.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+    <header>
+        <nav class="ini">
+            <div>
+                <ul class="opo">
+                    <li class="unu">tentang saya</li>
+                    <li class="unu">skill saya</li>
+                    <li class="unu">pendidikan saya</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="perkenalan">
+        <div  class="nama">
+        <h1 class="hi"> <span>hi</span> it's alfaizi</h1>
+        <h3 data-aos="fade-right" class="say">seorang yang sedang belajar pemrograman</h3>
+        <p data-aos="fade-right" data-aos-delay="500" class="pre">saat ini saya sekolah kelas 8 dan berumur 15tahun bersekolah di trichie lebih lengkap nya di bawah</p>
+        <a href="https://www.tiktok.com/@en_.2a?lang=id-ID"> <img src="tt.png" alt="" class="logo"></a>
+        <a href="https://www.instagram.com/leci.mty/"> <img src="ins.jpg" alt="" class="logo"></a>
+        <a href="https://www.facebook.com/profile.php?id=61572808677769"> <img src="images.png" alt="" class="logo"></a>
+        <img data-aos="fade-left" data-aos-delay="1000" src="IMG_20250322_232452.jpg" alt="logo" class="gambar"></div>
+     </section>
+     <section>
+        <h1 class="b">tentang saya</h1>
+        <p data-aos="fade-up" ata-aos-delay="800" class="pepe">ama saya Fabian, saya adalah seorang siswa kelas 8 di Trichie School. Saat ini, saya sedang menjalani perjalanan pendidikan di sekolah menengah pertama,<br> dan saya selalu berusaha untuk terus berkembang, baik dalam bidang akademik maupun keterampilan lainnya.
+
+            Saya menyukai berbagai hal, terutama berenang, gym, dan ngoding. Berenang memberi saya kesempatan untuk menjaga kebugaran tubuh, sementara gym membantu saya tetap fit dan lebih kuat. Selain itu, saya sangat tertarik <br> dengan dunia teknologi, terutama pemrograman (ngoding), yang saya anggap sebagai cara yang menyenangkan untuk menciptakan hal-hal baru.
+            
+            Di sekolah, saya juga aktif dalam beberapa kegiatan, dan saya selalu berusaha memberikan yang terbaik dalam setiap kesempatan yang ada. Saya percaya bahwa masa remaja ini adalah waktu yang sangat penting untuk belajar dan mengeksplorasi berbagai minat dan <br>bakat yang saya miliki.
+            
+            Walaupun saya masih muda, saya selalu berusaha untuk menjadi pribadi yang bertanggung jawab, disiplin, dan memiliki semangat untuk mencapai tujuan. Saya yakin bahwa dengan kerja keras dan dedikasi, saya bisa meraih impian saya di masa depan.</p>
+     </section>
+
+   
+        <section data-aos="fade-left" class="oas">
+            
+            <style>
+              s{
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 height: 100vh;
+                 margin: 0;
+                 font-family: Arial, sans-serif;
+                 margin-left: 400px;
+             }
+             canvas {
+                 max-width: 400px;
+             }
+         </style>
+     </head>
+         <h2>Grafik Skill </h2>
+         
+         <canvas id="myBarChart"></canvas>
+     
+         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+         <script>
+             var ctx = document.getElementById('myBarChart').getContext('2d');
+             var myBarChart = new Chart(ctx, {
+                 type: 'bar', // Tipe grafik bar
+                 data: {
+                     labels: ['HTML', 'CSS', 'JavaScript', 'motor', 'ArmWrestler'],
+                     datasets: [{
+                         label: 'Level Skill',
+                         data: [65, 60, 2, 65, 75],
+                         backgroundColor: 'pink', 
+                         borderColor: 'black', 
+                         borderWidth: 1
+             
+                     }]
+                 },
+                 options: {
+                     scales: {
+                         y: {
+                             beginAtZero: true, // Mulai dari 0
+                             max: 100 // Maksimum nilai
+                         }
+                     }
+                 }
+             });
+         </script>
+         </section>
+
+<section div data-aos="fade-right" class="login">
+    <div class="l0gin">
+        <h2> untuk selanjutnya</h2>
+        <form id="loginForm" action="#" method="POST">
+          <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="pssaword" required>
+          </div>
+          <button type="submit">Masuk</button>
+          <p id="error-message" style="color:red; display:none;">Password harus diisi!</p> <!-- Pesan error -->
+        </form>
+      </div>
+    
+  </section>
+
+     
+    
+  
+        <footer class="poro">
+            <nav>
+                <div>
+                    <ul class="ulu">
+                        <li class="lili">instagram</li>
+                        <li class="lili">contact</li>
+                        <li class="lili">me</li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+
+
+</body>
+<style>
+.gambar{
+    padding-left: 0,5rem;
+    margin-left: 1rem;
+    float: right;
+    background-color: pink;
+}
+
+</style>
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+<script>
+  AOS.init(
+    {duration:1500}
+  );
+</script>
+<script src="belajar.js"></script>
+<script src="script.js"></script>
+
+
+
+</html>
