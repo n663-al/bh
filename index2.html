@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ucapan Ulang Tahun</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 id="sambutan">🎂 Happy Birthday,  </h1>
+    <img src="images.jpeg" alt="Kue Ulang Tahun" class="cake-img" />
+    <p id="sell">Selamat hari spesialmu ke  🎉 se</p>
+    <button id="playMusic">🎵 Putar Musik</button>
+  </div>
+
+  <audio id="bgMusic" src="wwd.mp3juice.blog - The 1975 - About You (Official) (192 KBps) (1).mp3" loop></audio>
+
+  <footer style="color: #333;"> @dibuat oleh fabian</footer>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f72585, #7209b7);
+      min-height: 100vh;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      animation: pop 0.8s ease;
+    }
+
+    .cake-img {
+      width: 180px;
+      margin: 20px 0;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: #ffbe0b;
+      color: #333;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+      background: #f77f00;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+
+  <script>
+    const playButton = document.getElementById("playMusic");
+    const bgMusic = document.getElementById("bgMusic");
+
+    playButton.addEventListener("click", () => {
+      if (bgMusic.paused) {
+        bgMusic.play();
+        playButton.textContent = "⏸️ Pause Musik";
+      } else {
+        bgMusic.pause();
+        playButton.textContent = "🎵 Putar Musik";
+      }
+    });
+  </script>
+</body>
+</html>
+<script>
+    const nama = localStorage.getItem("namaUser");
+    const tahunLahir = localStorage.getItem("tahunUser");
+    const tahunSekarang = new Date().getFullYear();
+  
+    if (nama && tahunLahir) {
+      const umur = tahunSekarang - tahunLahir;
+  
+      document.getElementById("sambutan").innerText = "🎂 Happy Birthday, " + nama;
+  
+      if (umur > 0) {
+        document.getElementById("sell").innerText = "Selamat hari spesialmu ke-" + umur + "! 🎉 semoga senang selalu, sehat selalu, wish you all the best";
+      } else {
+        document.getElementById("sell").innerText = "Tahun lahir tidak valid, coba lagi!";
+      }
+    } else {
+      document.getElementById("sambutan").innerText = "Data tidak ditemukan, silakan isi dulu di halaman sebelumnya.";
+      document.getElementById("sell").innerText = "";
+    }
+  </script>
+  
